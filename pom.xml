@@ -136,6 +136,7 @@
         <log4j.version>2.17.1</log4j.version>
         
         <mysql-connector-java.version>8.0.33</mysql-connector-java.version>
+        <kingbase8.version>8.6.0.jre7</kingbase8.version>
         <derby.version>10.14.2.0</derby.version>
         <jjwt.version>0.11.2</jjwt.version>
         <javatuples.version>1.2</javatuples.version>
@@ -857,7 +858,18 @@
                 <artifactId>mysql-connector-j</artifactId>
                 <version>${mysql-connector-java.version}</version>
             </dependency>
-            
+
+            <dependency>
+                <groupId>cn.com.kingbase</groupId>
+                <artifactId>kingbase8</artifactId>
+                <version>kingbase8.version</version>
+            </dependency>
+
+            <dependency>
+                <groupId>cn.com.kingbase</groupId>
+                <artifactId>kingbase8</artifactId>
+                <version>${kingbase8.version}</version>
+            </dependency>
             <dependency>
                 <groupId>org.apache.derby</groupId>
                 <artifactId>derby</artifactId>
@@ -1018,4 +1030,3 @@
     </distributionManagement>
 
 </project>
-

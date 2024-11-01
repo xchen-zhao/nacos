@@ -14,18 +14,19 @@
  * limitations under the License.
  */
 
-package com.alibaba.nacos.plugin.datasource.constants;
+package com.alibaba.nacos.plugin.datasource.impl.kingbase;
+
+import com.alibaba.nacos.plugin.datasource.constants.DataSourceConstant;
+import com.alibaba.nacos.plugin.datasource.mapper.AbstractMapper;
+import com.alibaba.nacos.plugin.datasource.mapper.TenantInfoMapper;
 
 /**
- * The data source name.
- *
- * @author hyx
- **/
-
-public class DataSourceConstant {
-    public static final String MYSQL = "mysql";
-    
-    public static final String DERBY = "derby";
-
-    public static final String KINGBASE = "kingbase";
+ * 时间从来不语，却回答了所有问题.
+ * @author JasonChen
+ */
+public class TenantInfoMapperByKingbase extends AbstractMapper implements TenantInfoMapper {
+    @Override
+    public String getDataSource() {
+        return DataSourceConstant.KINGBASE;
+    }
 }

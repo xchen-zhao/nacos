@@ -74,6 +74,12 @@
             <scope>test</scope>
         </dependency>
 
+        <dependency>
+            <groupId>cn.com.kingbase</groupId>
+            <artifactId>kingbase8</artifactId>
+            <scope>test</scope>
+        </dependency>
+
     </dependencies>
     <build>
         <resources>
