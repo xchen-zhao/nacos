@@ -862,14 +862,9 @@
             <dependency>
                 <groupId>cn.com.kingbase</groupId>
                 <artifactId>kingbase8</artifactId>
-                <version>kingbase8.version</version>
-            </dependency>
-
-            <dependency>
-                <groupId>cn.com.kingbase</groupId>
-                <artifactId>kingbase8</artifactId>
                 <version>${kingbase8.version}</version>
             </dependency>
+
             <dependency>
                 <groupId>org.apache.derby</groupId>
                 <artifactId>derby</artifactId>
